@@ -26,4 +26,9 @@ view: spend_supplychaingraph {
     type: count
     drill_fields: [name]
   }
+  measure: totalcost {
+    type: sum
+    sql: ${TABLE}.cost ;;
+    }
+
 }
